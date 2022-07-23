@@ -52,10 +52,10 @@ function HomePage({ currentPage, setCurrentPage, burgerContent }) {
                             <Link to = {{pathname: 'https://www.instagram.com/softdatauz'}} target = "_blank">
                                 <img src = {instagram} alt = 'facebook'/>
                             </Link>
-                            <a href = "#">
+                            <a href = "https://facebook.com">
                                 <img src = {telegram} alt = 'facebook'/>
                             </a>
-                            <a href = "#">
+                            <a href = "https://instagram.com">
                                 <img src = {whatsup} alt = 'facebook'/>
                             </a>
                         </div>
