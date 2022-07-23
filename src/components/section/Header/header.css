@@ -1,0 +1,27 @@
+.my_header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  /* display: flex; */
+  padding-top: 50px;
+  background-color: #000;
+}
+
+.header_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  background-color: teal;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* .burger_page {
+  background-color: violet;
+} */

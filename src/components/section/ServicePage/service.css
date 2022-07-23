@@ -1,0 +1,118 @@
+.service_page_wrapper {
+    height: 100vh;
+    display: flex;
+    /* flex-direction: column-reverse; */
+    align-items: center;
+}
+
+.service_page {
+    display: flex;
+    width: 100%;
+    /* height: 100vh; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* align-items:stretch; */
+}
+
+.service_title {
+    line-height: 80px !important;
+}
+
+.service_page_item {
+    width: calc(1/4*100% - (1 - 1/4)*20px);
+    /* width: 25%; */
+    /* height: 260px; */
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* background-color: rgb(170, 170, 170); */
+    /* background: rgb(24, 24, 24); */
+    background-color: #0a0a0a;
+    position: relative;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.service_page_item:nth-child(1) {
+    justify-content: left;
+    align-items: center;
+}
+
+.service_page_item:hover {
+    border: 1px solid #fff;
+}
+
+.service_page_item:first-child {
+    width: calc(1/2*100% - (1 - 1/2)*20px);
+    /* flex-basis: 50%; */
+    margin: 20px 0px;
+    background-color: transparent;
+    
+}
+
+.service_page_item:first-child:hover { 
+    border: 1px solid transparent;
+    cursor:text;
+}
+
+.service_page_item_inner {
+    width: 90%;
+    /* height: 220px; */
+    text-align: left;
+    padding: 20px 0 !important;
+}
+
+.service_page_item:hover img{
+    filter: invert(51%) sepia(87%) saturate(400%) hue-rotate(89deg) brightness(97%) contrast(87%);
+}
+
+.service_page_item_inner h2 {
+    text-align: left;
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 20px;
+}
+
+.service_page_item_inner .green_line {
+    margin: 0 !important;
+    margin-top: 18px !important;
+}
+
+.service_page_item_inner p {
+    margin-top: 10px;
+}
+
+.service_page_round {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #353535;
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.service_page_round_inner {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.service_page_item:hover .service_page_round{
+    opacity: 1;
+}
+
+.service_page_mouse {
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

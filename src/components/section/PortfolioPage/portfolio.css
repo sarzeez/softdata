@@ -1,0 +1,233 @@
+.portfolio_page {
+  /* padding-top: 180px; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio_title {
+  text-align: center;
+}
+
+.my_tab {
+  margin-top: 70px !important;
+}
+
+.portfolio_type {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  justify-content: center;
+}
+
+.portfolio_type li {
+  margin: 0 25px;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  position: relative;
+}
+
+.portfolio_type li:hover {
+  color: #29b85d;
+  transition: all ease-in-out 0.2s;
+}
+
+.portfolio_type li:focus {
+  color: #29b85d;
+}
+
+.portfolio_type_item_count {
+  position: absolute;
+  top: -6px;
+  right: 12px;
+  font-size: 12px;
+  display: none;
+}
+
+.portfolio_type .react-tabs__tab--selected .portfolio_type_item_count {
+  display: block;
+}
+
+.portfolio_type_item_focus_line {
+  width: 80%;
+  margin: 0 auto;
+  height: 1px;
+  background-color: #ffffff;
+  opacity: 0;
+  margin-top: 10px !important;
+}
+
+.portfolio_type .react-tabs__tab--selected .portfolio_type_item_focus_line {
+  opacity: 1;
+}
+
+.portfolio .react-tabs__tab-list {
+  border: none;
+  padding: 0;
+}
+
+.portfolio .react-tabs__tab {
+  border: none !important;
+  border-radius: 0;
+}
+
+.react-tabs__tab--selected {
+  color: #29b85d;
+  border-radius: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.portfolio_tab_content {
+  width: calc(100vw - 200px) !important;
+  margin: 0 auto !important;
+  margin-top: 30px !important;
+}
+
+.owl-wrapper {
+  width: 100%;
+}
+
+.owl-theme {
+  width: 100% !important;
+  /* width: calc(100vw - 460px) !important; */
+}
+
+.item {
+  background-color: rgb(150, 150, 150);
+  text-align: center;
+  width: 300px !important;
+  margin: 0 auto !important;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.item img {
+  width: 300px !important;
+  -moz-transition: all 0.6s ease;
+  -webkit-transition: all 0.6s ease;
+  -ms-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+.item:hover img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.owl-theme .owl-nav {
+  margin-top: 50px !important;
+}
+
+.owl-theme .owl-nav button {
+  margin: 0 11px !important;
+}
+
+.owl-theme .owl-dots {
+  display: none;
+}
+
+.owl-carousel .owl-nav.disabled,
+.owl-carousel .owl-dots.disabled {
+  display: block !important;
+  /* margin-top: 55px !important; */
+}
+
+.owl-carousel .owl-dots.disabled {
+  display: none !important;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background-color: #29b85d !important;
+}
+
+.item-button {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.item:hover .item-button {
+  background-color: rgba(0, 0, 0, 0.71);
+  -moz-transition: all 0.6s ease;
+  -webkit-transition: all 0.6s ease;
+  -ms-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+.item:hover .item-button div {
+  opacity: 1;
+  -moz-transition: all 0.6s ease;
+  -webkit-transition: all 0.6s ease;
+  -ms-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+.item-button div {
+  opacity: 0;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  background-color: #fff;
+  margin-bottom: 50px !important;
+  margin-top: 40px;
+}
+
+.item-button div a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-button div a img{
+   width: 30px !important;
+   margin-top: 10px;
+}
+
+.item-button button {
+  width: 90% !important;
+  height: 55px;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.71);
+  color: #fff;
+  -moz-transition: all 0.6s ease;
+  -webkit-transition: all 0.6s ease;
+  -ms-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  opacity: 0;
+}
+
+.item:hover .item-button button {
+  opacity: 1;
+}
+
+.portfolio_tab_content .owl-nav button {
+  width: 36px !important;
+  height: 36px !important;
+  border-radius: 50% !important;
+  /* background-color: rosybrown !important; */
+  font-size: 20px !important;
+  border: 1px solid #fff !important;
+}
+
+@media screen and (max-width: 480px) {
+  .portfolio_tab_content {
+    width: calc(100vw - 0px) !important;
+  }
+}

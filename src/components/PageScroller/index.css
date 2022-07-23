@@ -1,0 +1,145 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  /* font-family: "Lexend", sans-serif; */
+  color: #fff;
+  background-color: #000;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  font-family: "Gilroy", sans-serif;
+  @font-face {
+    font-family: "Gilroy";
+    src: url(../../fonts/Gilroy-Regular.ttf);
+  }
+}
+
+.container {
+  width: calc(100% - 200px) !important;
+  margin: 0 auto;
+}
+
+.title {
+  margin: 20px auto 0;
+  text-align: center;
+}
+
+.component {
+  /* height: calc(100% - 106px); */
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+/* .first-component {
+} */
+
+.component.second-component {
+  background-color: rgb(0, 0, 0);
+  background: url(../../image//ServicePage//SoftData.svg);
+  background-repeat: no-repeat;
+  /* background-size: 40%; */
+  background-size: 720px;
+  background-position: 20px 170px;
+}
+
+.component.third-component {
+  background-color: #000;
+  background: url(../../image//ServicePage//SoftData.svg);
+  background-repeat: no-repeat;
+  /* background-size: 40%; */
+  background-size: 720px;
+  background-position: 50px 200px;
+}
+
+.component.fourth-component {
+  background-color: #000;
+  background: url(../../image//ServicePage//SoftData.svg);
+  background-repeat: no-repeat;
+  background-size: 720px;
+  background-position: center 130px;
+}
+
+.component.fifth-component {
+  background-color: #000;
+  background: url(../../image//ServicePage//SoftData.svg);
+  background-repeat: no-repeat;
+  /* background-size: 40%; */
+  background-size: 720px;
+  background-position: center 102px;
+}
+
+/* h2 {
+  margin: auto;
+  text-align: center;
+} */
+
+.fixed_pagination {
+  position: fixed;
+  width: 100px;
+  height: 100vh;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-direction: column;
+  top: 0;
+  right: 0;
+  z-index: 998;
+  list-style: none;
+}
+
+.fixed_pagination li {
+  text-align: center;
+  margin: 25px 0;
+}
+
+.fixed_pagination li a {
+  margin-right: 0 !important;
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff;
+}
+
+.pipe {
+  width: 1px;
+  height: 83px;
+  background-color: #fff;
+  margin: 12px auto;
+}
+
+.green_text {
+  color: #29b85d;
+}
+
+.green_line {
+  width: 120px;
+  height: 1px;
+  border: none;
+  background-color: #29b85d;
+  margin: 0 auto;
+}
+
+.h_title {
+  font-size: 80px;
+  line-height: 116px;
+  /* background: url(../../image//ServicePage//SoftData.svg);
+  background-repeat: no-repeat;
+  background-size: 100%; */
+  /* background-position: center -20px; */
+
+  @font-face {
+    font-family: "Gilroy";
+    src: url(../../fonts/Gilroy-ExtraBold.otf);
+  };
+
+}
+
+.particles-bg-canvas-self {
+  background: #000;
+}
